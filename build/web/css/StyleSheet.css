@@ -1,0 +1,263 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jun 6, 2023, 1:21:03 AM
+    Author     : Faiq Sarwar
+*/
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main{
+    background-color: #c1c2ff;
+    width: 50%;
+    padding: 15px;
+    border: 5px solid blue;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.bordertitle{
+  margin-left: 7px;
+  background-color: #c1c2ff;
+  margin-top: -25px;
+  width: 40px;
+  height: 20px;
+}
+.main-part2{
+    margin-left: 10px;
+}
+.pizza,.extra,.deal{
+    border: 3px solid white;
+}
+.showlabel label{
+    font-size: 40px;
+    font-weight: bold;
+}
+.pizza{
+    padding: 10px;
+    display: flex;
+    width: 200px;
+    gap:25px;
+    margin-bottom: 15px;
+}
+.pizza-field{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 4px;
+    background-color: #bbf4bf;
+    outline: none;
+    border: none;
+}
+.c1{
+    background-color: #bbf4bf;
+    outline: none;
+}
+.p{
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.e{
+    position: relative;
+    float: right;
+    right: 40px;
+}
+.extra-input{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    margin-left: 40px;
+    background-color:  #fec5be;
+    outline: none;
+}
+.c2{
+    background-color:  #fec5be;
+    outline: none;
+}
+.c3{
+    background-color: #c1c2ff;
+    outline: none;
+}
+.dealpanelinput{
+    width: 70px;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.extra label{
+    font-size: 20px;
+}
+.extra{
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.deal{
+    padding: 10px;
+    display: flex;
+    width: 350px;
+}
+.total-panel{
+    width: 370px;
+    margin-top: 5px;
+}
+.output{
+    width: 100%;
+    height: 90px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #00a800;
+    background-color: #404040;
+    outline: none;
+    border: none;
+}
+.d1 label, .d2 label, .d3 label,.d4 label{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.form,.form1{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    /*top: 70px;*/
+    top: -500px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    transition: top 0.5s ease;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form1{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+/*    top: 70px;*/
+    top: -500px;
+    left: 500px;
+    transform: translate(0%,-5%);
+    transition: top 0.9s ease;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+
+.form h2,.form1 h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ff7200;
+    font-size: 22px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input,.form1 input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.btn{
+    width: 240px;
+    height: 40px;
+    background: #ff7200;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+.btn:hover{
+    background: black;
+    color: white;
+}
+.buttons{
+    margin-left: 15%;
+}
+
+
+/*css for display page*/
+
+#record-tablel {
+    margin-left: 5%;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+}
+#record-tablel td,
+#record-tablel th {
+    color: white;
+    border: 1px solid #6e7cbb;
+    padding: 8px;
+    text-align: center;
+}
+
+#record-tablel tr:nth-child(even) {
+    background-color: #5a83db;
+}
+#record-tablel tr:nth-child(odd) {
+    background-color: #55aed8;
+}
+#record-tablel tr:hover {
+    background-color: #1f777a;
+}
+
+#record-tablel th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #3055bb;
+    color: white;
+}
+.fa-trash {
+    color: rgb(151, 8, 8);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-trash:hover {
+    color: red;
+}
+.fa-pen-to-square{
+    font-size: 20px;
+    cursor: pointer;
+    color: #cfc80e;
+}
+.fa-pen-to-square:hover{
+    color: yellow;
+}
+.space
+{
+    margin-left: 20px;
+}

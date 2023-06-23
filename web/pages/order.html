@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/c18972abce.js" crossorigin="anonymous"></script>
+    <title>Order</title>
+</head>
+<body>
+    <div class="body-image">
+        <nav class="navbar">
+            <label class="logo">Online Fast Food</label>
+            <ul class="navbar-list navbar-right">
+                <li class="navbar-item"><a href="../index.jsp" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="./pizza.jsp" class="navbar-link">Pizza</a></li>
+                <li class="navbar-item"><a href="./deal.jsp" class="navbar-link">Deal</a></li>
+                <li class="active navbar-item"><a href="./order.html" class="navbar-link">Order</a></li>
+            </ul>
+        </nav>
+        <div class="user-data">
+            <label>Name:<span class="required">*</span></label><br>
+            <input type="text" class="input-fields" id="user-name" placeholder="Enter the Name of Customer"><br>
+            <label>Phone number:<span class="required">*</span></label><br>
+            <input type="text" class="input-fields" id="user-phone" placeholder="Contact 03xx-xxxxxxx"><br>
+            <label>Address:<span class="required">*</span></label><br>
+            <input type="text" class="input-fields" id="user-address" placeholder="Enter Address"><br>
+            <label>Total:<span class="required">*</span></label><br>
+            <input type="text" class="input-fields total" readonly id="Total-amount" placeholder="Load the Total Bill"><br>
+            <button id="save-order">Save Order</button>
+        </div>
+        <button id="load">See the Order</button>
+        <div class="table-body">
+            <table class="order-data" id="tabal-data"></table>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+</body>
+</html>
